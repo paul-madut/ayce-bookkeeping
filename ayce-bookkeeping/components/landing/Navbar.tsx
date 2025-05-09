@@ -11,28 +11,29 @@ import {
   MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function NavbarSection() {
   const navItems = [
     {
       name: "Home",
-      link: "#home",
+      link: "/",
     },
     {
       name: "Team",
-      link: "#team",
+      link: "team",
     },
     {
       name: "Services",
-      link: "#services",
+      link: "services",
     },
     {
       name: "Press",
-      link: "#press",
+      link: "press",
     },
     {
       name: "Contact",
-      link: "#contact",
+      link: "contact",
     },
   ];
 
@@ -43,6 +44,7 @@ export default function NavbarSection() {
       <Navbar>
         {/* Desktop Navigation */}
         <NavBody>
+          <Link href="/">
         <div 
             className="text-2xl font-bold mr-8 bg-gradient-to-r from-[#468783] to-[#005154] bg-clip-text text-transparent"
          
@@ -50,6 +52,7 @@ export default function NavbarSection() {
           >
             AYCE CAPITAL
           </div>
+            </Link>
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
   

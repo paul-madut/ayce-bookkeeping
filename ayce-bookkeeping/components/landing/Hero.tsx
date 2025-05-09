@@ -47,7 +47,7 @@ function Hero() {
 
   return (
     <>
-      <section className="pt-32 lg:pt-40 px-6 lg:px-16 min-h-screen">
+      <section className=" pt-[60vh] px-6 lg:px-16 min-h-screen">
         <motion.div 
           className="max-w-6xl mx-auto"
           initial="hidden"
@@ -58,23 +58,21 @@ function Hero() {
             className="mb-6 inline-block text-sm border border-gray-700 px-4 py-1 rounded-full"
             variants={itemVariants}
           >
-            Quick Honest and Fair
+            Modernizing Bookkeeping, Empowering Growth
           </motion.div>
           
           <motion.h1 
             className="text-4xl lg:text-7xl font-bold mb-6 leading-tight"
             variants={itemVariants}
           >
-            Acquiring Managed Service Providers the way it should be done…
+            Revitalizing Canadian <br /> Bookkeeping
           </motion.h1>
           
           <motion.p 
             className="text-lg lg:text-xl mb-10 text-gray-400 max-w-2xl"
             variants={itemVariants}
           >
-            We invest in and partner with Managed Service Providers that
-            prioritize quality service, customer satisfaction, and employee
-            well-being.
+            We acquire and scale established bookkeeping businesses across Canada with a mission to modernize the industry. Through thoughtful partnerships and operational upgrades, we help firms reach new levels of efficiency, service, and long-term success.
           </motion.p>
           
           <motion.div 

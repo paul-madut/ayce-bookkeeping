@@ -2,13 +2,16 @@
 import { useState, useEffect } from "react";
 import { Menu, X, ArrowRight, ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
+import { LampContainer } from "@/components/ui/lamp";
 
 // components
 import NavbarSection from "../components/landing/Navbar";
 import Hero from "../components/landing/Hero";
+import About from "../components/landing/About";
+
 
 // Custom animation component for text elements
-const AnimatedText = ({ children, delay = 0, className = "" }) => {
+export const AnimatedText = ({ children, delay = 0, className = "" }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -48,58 +51,24 @@ export default function AyceCapitalClone() {
   const stagger = (index, baseDelay = 0.1) => baseDelay + index * 0.1;
 
   return (
-    <div className="min-h-screen bg-black text-white">
-      <div className="pt-2 fixed top-0 left-0 w-full z-50">
-        <NavbarSection />
-      </div>
-      
-      <Hero />
-
-      {/* Investment Approach */}
-      <section className="py-24 px-6 lg:px-16 bg-gray-900">
-        <div className="max-w-6xl mx-auto">
-          <div className="mb-16">
-            <AnimatedText delay={0.1} className="mb-4 text-sm text-gray-400">
-              INVESTMENT APPROACH
-            </AnimatedText>
-            <AnimatedText delay={0.2} className="text-3xl lg:text-5xl font-bold mb-8">
-              How We Create Value
-            </AnimatedText>
-            <AnimatedText delay={0.3} className="text-lg text-gray-400 max-w-2xl">
-              Our strategic approach combines financial expertise with
-              agricultural innovation to deliver sustainable growth.
-            </AnimatedText>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[1, 2, 3, 4, 5, 6].map((item, index) => (
-              <motion.div
-                key={item}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{
-                  duration: 0.6,
-                  ease: [0.22, 1, 0.36, 1],
-                  delay: stagger(index, 0.15)
-                }}
-                className="bg-black p-6 rounded-lg"
-              >
-                <div className="mb-4 h-12 w-12 bg-gray-800 rounded-full flex items-center justify-center">
-                  <ArrowUpRight size={24} />
-                </div>
-                <h3 className="text-xl font-bold mb-2">
-                  Strategic Investment {item}
-                </h3>
-                <p className="text-gray-400">
-                  Carefully selected agricultural ventures with strong growth
-                  potential and environmental benefits.
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+    <>
+    
+      <LampContainer className=" pt-[15rem] " >
+      <motion.h1
+        initial={{ opacity: 0.5, y: 100 }}
+        whileInView={{ opacity: 1, y: -250, x: -250 }}
+        transition={{
+          delay: 0.3,
+          duration: 0.8,
+          ease: "easeInOut",
+        }}
+        className="    tracking-tight   "
+      >
+        <Hero></Hero>
+      </motion.h1>
+      </LampContainer >
+     
+     <About/>
 
       {/* Portfolio Showcase */}
       <section className="py-24 px-6 lg:px-16">
@@ -394,6 +363,6 @@ export default function AyceCapitalClone() {
           </AnimatedText>
         </div>
       </footer>
-    </div>
+ </>
   );
 }
