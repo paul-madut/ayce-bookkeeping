@@ -58,7 +58,7 @@ function Hero() {
             className="mb-6 inline-block text-sm border border-gray-700 px-4 py-1 rounded-full"
             variants={itemVariants}
           >
-            Modernizing Bookkeeping, Empowering Growth
+            Modern Support for Legacy Firms
           </motion.div>
           
           <motion.h1 
