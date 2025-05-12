@@ -223,7 +223,7 @@ const ServicesPage = () => {
     <GridItem
       area="md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]"
       icon={<Lightbulb className="h-4 w-4 text-black dark:text-neutral-400" />}
-      title="Stratategy"
+      title="Strategy"
       description="We develop a tailored service plan that addresses your unique requirements."
     />
  
