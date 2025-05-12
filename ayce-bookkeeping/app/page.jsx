@@ -55,7 +55,7 @@ export default function page() {
 
       <About />
       <Story />
-      <Testimonials />
+      
       <Contact />
       
     </>
