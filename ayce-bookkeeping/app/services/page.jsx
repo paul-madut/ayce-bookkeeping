@@ -8,8 +8,13 @@ import {
   PieChart,
   Shield,
   Users,
+  Briefcase,
+  Lightbulb,
+  Eraser,
+  Box, Lock, Search, Settings, Sparkles
 } from "lucide-react";
-
+import { GlowingEffect } from "@/components/ui/glowing-effect";
+import Link from "next/link";
 const ServicesPage = () => {
   const [scrollY, setScrollY] = useState(0);
   const [isVisible, setIsVisible] = useState({});
@@ -82,69 +87,42 @@ const ServicesPage = () => {
     },
     {
       id: 4,
-      title: "Tax Preparation",
+      title: "Fractional CFO Services",
       description:
-        "Expert tax preparation services to minimize your tax liability while ensuring full compliance with all applicable tax laws and regulations.",
-      icon: <Calculator className="w-8 h-8 text-teal-400" />,
+        "Strategic financial leadership on a part-time basis to help you drive growth, improve cash flow, and make better long-term decisions without the cost of a full-time CFO.",
+      icon: <Briefcase className="w-8 h-8 text-teal-400" />,
       benefits: [
-        "Tax planning",
-        "Return preparation",
-        "Deduction optimization",
-        "Audit support",
+        "Financial forecasting",
+        "Budgeting and planning",
+        "Cash flow management",
+        "Executive-level reporting",
       ],
     },
     {
       id: 5,
-      title: "M&A Advisory",
+      title: "Advisory Services",
       description:
-        "Specialized acquisition services for those looking to buy bookkeeping firms. We handle the entire process from identifying targets to post-acquisition integration.",
-      icon: <TrendingUp className="w-8 h-8 text-teal-400" />,
+        "Personalized financial guidance to support your business through key decisions, operational improvements, and financial planning challenges.",
+      icon: <Lightbulb className="w-8 h-8 text-teal-400" />,
       benefits: [
-        "Target identification",
-        "Valuation",
-        "Due diligence",
-        "Integration support",
+        "Business performance reviews",
+        "Strategic planning",
+        "Cost optimization",
+        "Growth strategy support",
       ],
     },
     {
       id: 6,
-      title: "Compliance Services",
+      title: "Cleanup & Catch-up Services",
       description:
-        "Comprehensive compliance solutions to ensure your financial operations meet all regulatory requirements and industry standards.",
-      icon: <Shield className="w-8 h-8 text-teal-400" />,
+        "If you're behind on your books, we'll get you up to date quickly and accurately so you can regain control and confidence in your financials.",
+      icon: <Eraser className="w-8 h-8 text-teal-400" />,
       benefits: [
-        "Regulatory compliance",
-        "Financial audits",
-        "Risk assessment",
-        "Policy development",
+        "Backlog bookkeeping",
+        "Historical reconciliations",
+        "Error corrections",
+        "Organized records for tax readiness",
       ],
-    },
-  ];
-
-  const processSteps = [
-    {
-      id: "step1",
-      title: "Discovery",
-      description:
-        "We learn about your business, current financial processes, and specific needs.",
-    },
-    {
-      id: "step2",
-      title: "Strategy",
-      description:
-        "We develop a tailored service plan that addresses your unique requirements.",
-    },
-    {
-      id: "step3",
-      title: "Implementation",
-      description:
-        "Our team integrates seamlessly with your operations to deliver financial clarity.",
-    },
-    {
-      id: "step4",
-      title: "Optimization",
-      description:
-        "We continuously refine our approach to maximize efficiency and value.",
     },
   ];
 
@@ -152,22 +130,25 @@ const ServicesPage = () => {
     <div className="bg-black text-white min-h-screen overflow-x-hidden">
       {/* Logo */}
 
-      {/* Services Header */}
-      <div className="container mx-auto px-6 pt-8 pb-20">
-        <div className={`transform transition-all duration-700 pt-20`}>
-          <span className="inline-block px-4 py-2 rounded-full bg-gray-900 text-teal-400 text-sm font-medium mb-4">
-            Quick Honest and Fair
-          </span>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Expert Bookkeeping Services
-          </h1>
-          <div className="h-1 w-24 bg-teal-400 mb-8"></div>
+      {/* Hero Section */}
+      <div className="relative h-[400px] bg-gradient-to-r from-gray-900 to-black text-center">
+        <div className="absolute inset-0 opacity-20 bg-[url('/api/placeholder/1920/400')]"></div>
+        <div className="container mx-auto px-6 flex items-center justify-center h-full relative z-10">
+          <div className="flex flex-col space-y-8">
+
+          <h1 className="text-5xl md:text-6xl font-bold text-white tracking-wider">Expert Bookkeeping Services</h1>
+          
+          <div className="">
+        
           <p className="text-xl text-gray-300 max-w-3xl">
-            We provide premium bookkeeping services to businesses and specialize
-            in acquiring bookkeeping companies.
+          We offer premium bookkeeping services for businesses and specialize in acquiring bookkeeping firms — all with a clear, predictable monthly retainer so you'll never be surprised by hidden fees.
           </p>
+          </div>
         </div>
+          </div>
+        
       </div>
+
 
       {/* Services Grid */}
       <div className="bg-gray-900 py-24">
@@ -205,7 +186,7 @@ const ServicesPage = () => {
         </div>
       </div>
 
-      {/* Our Process */}
+      {/* Our Process - Aceternity Component with 5 Sections */}
       <div className="py-24 bg-black">
         <div className="container mx-auto px-6">
           <div
@@ -224,59 +205,50 @@ const ServicesPage = () => {
             </p>
           </div>
 
-          <div className="relative">
-            <div className="absolute left-1/2 top-0 bottom-0 w-px bg-gray-800 transform -translate-x-1/2 hidden md:block"></div>
-
-            <div className="space-y-16 md:space-y-24">
-              {processSteps.map((step, index) => (
-                <div
-                  key={step.id}
-                  id={step.id}
-                  className={`animate-on-scroll relative transition-all duration-700 ${
-                    isVisible[step.id] ? "opacity-100" : "opacity-0"
-                  }`}
-                  style={{ transitionDelay: `${index * 200}ms` }}
-                >
-                  <div
-                    className={`md:w-1/2 ${
-                      index % 2 === 0 ? "md:pr-12 md:ml-auto" : "md:pl-12"
-                    }`}
-                  >
-                    <div className="bg-gray-900 p-8 rounded-lg relative">
-                      {/* Number badge for desktop */}
-                      <div
-                        className={`absolute top-0 ${
-                          index % 2 === 0
-                            ? "left-0 ml-[-1.25rem]"
-                            : "right-0 mr-[-1.25rem]"
-                        } mt-[-1.25rem] hidden md:block`}
-                      >
-                        <div className="w-10 h-10 rounded-full bg-teal-400 flex items-center justify-center z-10 relative">
-                          <span className="text-black font-bold">
-                            {index + 1}
-                          </span>
-                        </div>
-                      </div>
-
-                      {/* Number badge for mobile */}
-                      <div className="md:hidden mb-4">
-                        <div className="w-10 h-10 rounded-full bg-teal-400 flex items-center justify-center">
-                          <span className="text-black font-bold">
-                            {index + 1}
-                          </span>
-                        </div>
-                      </div>
-
-                      <h3 className="text-2xl font-bold mb-4 text-teal-400">
-                        {step.title}
-                      </h3>
-                      <p className="text-gray-300">{step.description}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+          {/* Aceternity Glowing Effect Component */}
+          <div 
+  id="process-grid"
+  className={`animate-on-scroll transition-all duration-700 ${
+    isVisible["process-grid"] ? "opacity-100" : "opacity-0"
+  }`}
+>
+<ul className="grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[34rem] xl:grid-rows-2">
+    <GridItem
+      area="md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]"
+      icon={<FileText className="h-4 w-4 text-black dark:text-neutral-400" />}
+      title="Discovery"
+      description="We learn about your business, current financial processes, and specific needs."
+    />
+ 
+    <GridItem
+      area="md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]"
+      icon={<Lightbulb className="h-4 w-4 text-black dark:text-neutral-400" />}
+      title="Stratategy"
+      description="We develop a tailored service plan that addresses your unique requirements."
+    />
+ 
+    <GridItem
+      area="md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]"
+      icon={<PieChart className="h-4 w-4 text-black dark:text-neutral-400" />}
+      title="Implementation"
+      description="Our team integrates seamlessly with your operations to deliver financial clarity."
+    />
+ 
+    <GridItem
+      area="md:[grid-area:2/7/3/13] xl:[grid-area:1/8/2/13]"
+      icon={<TrendingUp className="h-4 w-4 text-black dark:text-neutral-400" />}
+      title="Optimization"
+      description="We continuously refine our approach to maximize efficiency and value."
+    />
+ 
+    <GridItem
+      area="md:[grid-area:3/1/4/13] xl:[grid-area:2/8/3/13]"
+      icon={<Users className="h-4 w-4 text-black dark:text-neutral-400" />}
+      title="Long-term Partnership "
+      description="We maintain ongoing support and strategic guidance as your business evolves and grows."
+    />
+  </ul>
+</div>
         </div>
       </div>
 
@@ -398,30 +370,54 @@ const ServicesPage = () => {
               considering selling your bookkeeping practice, our team is here to
               help.
             </p>
+            <Link href="/contact">
             <button className="bg-teal-600 hover:bg-teal-700 text-white py-3 px-8 rounded-md text-lg font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
               Book a consultation
             </button>
+            </Link>
           </div>
         </div>
       </div>
-
-      {/* Footer */}
-      <footer className="bg-gray-900 py-12">
-        <div className="container mx-auto px-6 text-center">
-          <div className="text-teal-400 text-xl font-bold mb-4">
-            AYCE CAPITAL
-          </div>
-          <p className="text-gray-400 max-w-md mx-auto mb-6">
-            Specializing in premium bookkeeping services and strategic
-            acquisitions in the bookkeeping industry.
-          </p>
-          <div className="h-px w-16 bg-gray-800 mx-auto mb-6"></div>
-          <p className="text-gray-500 text-sm">
-            © {new Date().getFullYear()} AYCE Capital. All rights reserved.
-          </p>
-        </div>
-      </footer>
     </div>
+  );
+};
+
+// GridItem component for the aceternity effect
+const GridItem = ({
+  area,
+  icon,
+  title,
+  description
+}) => {
+  return (
+    <li className={`min-h-[14rem] list-none ${area}`}>
+      <div className="relative h-full rounded-2xl border border-gray-800 p-2 md:rounded-3xl md:p-3">
+        <GlowingEffect
+          spread={40}
+          glow={true}
+          disabled={false}
+          proximity={64}
+          inactiveZone={0.01} />
+        <div
+          className="relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl bg-gray-900 p-6 md:p-6 dark:shadow-[0px_0px_27px_0px_#2D2D2D]">
+          <div className="relative flex flex-1 flex-col justify-between gap-3">
+            <div className="w-fit rounded-lg border border-teal-400 bg-black p-2">
+              {icon}
+            </div>
+            <div className="space-y-3">
+              <h3
+                className="pt-0.5 font-sans text-xl/[1.375rem] font-semibold text-balance text-teal-400 md:text-2xl/[1.875rem]">
+                {title}
+              </h3>
+              <h2
+                className="font-sans text-sm/[1.125rem] text-gray-300 md:text-base/[1.375rem]">
+                {description}
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
   );
 };
 

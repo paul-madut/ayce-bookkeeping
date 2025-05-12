@@ -133,8 +133,8 @@ export default function ContactPage() {
               className="bg-gray-900 p-6 rounded-lg mb-6 border-l-4 border-teal-400"
             >
               <h3 className="text-lg font-semibold mb-2 text-teal-400">Email</h3>
-              <p className="text-gray-300">info@aycecapital.com</p>
-              <p className="text-gray-300">support@aycecapital.com</p>
+              <p className="text-gray-300">info@ayce-bookkeeping.com</p>
+              <p className="text-gray-300">support@ayce-bookkeeping.com</p>
             </motion.div>
 
             <motion.div 
@@ -299,7 +299,7 @@ export default function ContactPage() {
       {/* Footer */}
       <div className="container mx-auto px-4 py-8 mt-12 border-t border-gray-800">
         <div className="text-center text-gray-500 text-sm">
-          © 2025 AYCE Capital. All rights reserved.
+          © 2025 AYCE Bookkeeping. All rights reserved.
         </div>
       </div>
     </div>

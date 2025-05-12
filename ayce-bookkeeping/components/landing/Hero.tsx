@@ -2,6 +2,7 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 function Hero() {
   // Animation variants for staggered animations
@@ -47,7 +48,7 @@ function Hero() {
 
   return (
     <>
-      <section className=" pt-[60vh] px-6 lg:px-16 min-h-screen">
+      <section className="mt-14 xs:mt-14 sm:mt-2 md-12 pt-[60vh] lg:mr-90 px-6 lg:px-16 h-fit">
         <motion.div 
           className="max-w-6xl mx-auto"
           initial="hidden"
@@ -62,14 +63,14 @@ function Hero() {
           </motion.div>
           
           <motion.h1 
-            className="text-4xl lg:text-7xl font-bold mb-6 leading-tight"
+            className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight"
             variants={itemVariants}
           >
-            Revitalizing Canadian <br /> Bookkeeping
+            Revitalizing <br /> Bookkeeping
           </motion.h1>
           
           <motion.p 
-            className="text-lg lg:text-xl mb-10 text-gray-400 max-w-2xl"
+            className="text-lg md:text-xl mb-10 text-gray-400 max-w-2xl"
             variants={itemVariants}
           >
             We acquire and scale established bookkeeping businesses across Canada with a mission to modernize the industry. Through thoughtful partnerships and operational upgrades, we help firms reach new levels of efficiency, service, and long-term success.
@@ -79,23 +80,27 @@ function Hero() {
             className="flex flex-col sm:flex-row gap-4"
             variants={itemVariants}
           >
+            <Link href="/press">
             <motion.button 
               className="bg-white text-black px-8 py-3 rounded-full flex items-center justify-center gap-2 hover:bg-gray-200 transition"
               variants={buttonVariants}
               whileHover="hover"
               whileTap="tap"
-            >
+              >
               Our Portfolio <ArrowRight size={16} />
             </motion.button>
+              </Link>
             
+            <Link href="/services">
             <motion.button 
               className="border border-white px-8 py-3 rounded-full flex items-center justify-center gap-2 hover:bg-white hover:text-black transition"
               variants={buttonVariants}
               whileHover="hover"
               whileTap="tap"
-            >
+              >
               About Us <ArrowRight size={16} />
             </motion.button>
+              </Link>
           </motion.div>
 
           {/* Animated decorative element */}

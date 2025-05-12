@@ -31,10 +31,6 @@ export default function NavbarSection() {
       name: "Press",
       link: "press",
     },
-    {
-      name: "Contact",
-      link: "contact",
-    },
   ];
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -45,18 +41,17 @@ export default function NavbarSection() {
         {/* Desktop Navigation */}
         <NavBody>
           <Link href="/">
-        <div 
-            className="text-2xl font-bold mr-8 bg-gradient-to-r from-[#468783] to-[#005154] bg-clip-text text-transparent"
          
-
-          >
-            AYCE CAPITAL
-          </div>
-            </Link>
+              <div className="text-2xl font-bold mr-8 bg-gradient-to-r from-[#468783] to-[#005154] bg-clip-text text-transparent">
+                AYCE Bookkeeping
+              </div>
+            
+          </Link>
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
-  
-            <NavbarButton variant="primary">Book a call</NavbarButton>
+            <Link href="/contact">
+              <NavbarButton variant="primary">Book a call</NavbarButton>
+            </Link>
           </div>
         </NavBody>
 
@@ -85,7 +80,6 @@ export default function NavbarSection() {
               </a>
             ))}
             <div className="flex w-full flex-col gap-4">
- 
               <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
@@ -98,10 +92,7 @@ export default function NavbarSection() {
         </MobileNav>
       </Navbar>
 
-
       {/* Navbar */}
     </div>
   );
 }
-
-
