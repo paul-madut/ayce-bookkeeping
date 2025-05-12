@@ -34,8 +34,8 @@ const TeamPage = () => {
       name: 'Fadi syoufi',
       title: 'Director',
       image: '/team/fadi.jpg',
-      bio: 'Liam is the VP of M&A at AYCE Capital. He focuses on financial analysis, due diligence, and transaction document preparation. He has prior experience in M&A advisory, financial modeling, and FP&A for a renewable energy firm.',
-      personalInfo: 'Born in the Maritimes and raised in Ottawa, Liam enjoys badminton, running, poker, and bouldering in his free time.'
+      bio: 'Fadi Syoufi has a background in public accounting, where he worked with a wide range of corporate clients. Before launching his own successful bookkeeping business, he advised on complex corporate transactions including mergers and acquisitions, spin-offs, and fractional sales. With a deep understanding of financial operations and a passion for building efficient, scalable systems, Fadi is now focused on modernizing bookkeeping services across Canada through strategic acquisitions and thoughtful growth.',
+      personalInfo: 'Born and raised in Ottawa, Fadi is a motorsport enthusiast who enjoys racing, golfing, and reading. He’s also active in nonprofit work and previously served as a board member for the Carleton University Students’ Association.'
     },
     {
       id: 5,
