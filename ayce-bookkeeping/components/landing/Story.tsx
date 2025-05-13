@@ -55,7 +55,7 @@ const Story = () => {
                     Finding the Right Partners
                   </h3>
                   <p className="text-lg">
-                    That's when we connected with the founders of <span className="text-white font-medium">AYCE Capital</span>, 
+                    That's when we connected with the founders of <span className="text-white font-medium">AYCE Bookkeeping</span>, 
                     who were already transforming managed service providers (MSPs) 
                     by helping them modernize and move to the cloud.
                   </p>
