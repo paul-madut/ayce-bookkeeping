@@ -11,6 +11,8 @@ import {
 import React, { useRef, useState } from "react";
 
 import Link from "next/link";
+import Image from "next/image";
+
 interface NavbarProps {
   children: React.ReactNode;
   className?: string;
@@ -236,9 +238,9 @@ export const NavbarLogo = () => {
     
       <Link href="/">
          
-         <div className="text-2xl font-bold mr-8 bg-gradient-to-r from-[#468783] to-[#005154] bg-clip-text text-transparent">
-           AYCE Bookkeeping
-         </div>
+         <Image src="/logo.svg" alt="Logo" width={100} height={100}>
+
+         </Image>
        
      </Link>
     
