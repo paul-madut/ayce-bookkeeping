@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/resizable-navbar";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image"; 
 
 export default function NavbarSection() {
   const navItems = [
@@ -43,7 +44,7 @@ export default function NavbarSection() {
           <Link href="/">
          
               <div className="text-2xl font-bold mr-8 bg-gradient-to-r from-[#468783] to-[#005154] bg-clip-text text-transparent">
-                AYCE Bookkeeping
+                <Image src={"/logo.svg"} alt="AYCE Bookkeeping" width={100} height={100}></Image>
               </div>
             
           </Link>
