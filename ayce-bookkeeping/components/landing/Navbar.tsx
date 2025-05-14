@@ -85,6 +85,7 @@ export default function NavbarSection() {
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
                 className="w-full"
+                href="/contact"
               >
                 Contact Us
               </NavbarButton>
