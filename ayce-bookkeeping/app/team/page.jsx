@@ -139,9 +139,12 @@ const TeamPage = () => {
           <p className="text-gray-400 max-w-2xl mx-auto mb-8">
             We invest in and partner with Managed Service Providers that prioritize quality service, customer satisfaction, and employee well-being.
           </p>
+          <Link href="/contact">
+
           <button className="bg-teal-600 hover:bg-teal-700 text-white py-3 px-8 rounded-md text-lg font-medium">
             Book a call
           </button>
+          </Link>
         </div>
       </div>
       
