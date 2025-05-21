@@ -31,20 +31,13 @@ const TeamPage = () => {
     },
     {
       id: 4,
-      name: 'Fadi syoufi',
+      name: 'Fadi Syoufi',
       title: 'Director',
       image: '/team/fadi.jpg',
       bio: 'Fadi Syoufi has a background in public accounting, where he worked with a wide range of corporate clients. Before launching his own successful bookkeeping business, he advised on complex corporate transactions including mergers and acquisitions, spin-offs, and fractional sales. With a deep understanding of financial operations and a passion for building efficient, scalable systems, Fadi is now focused on modernizing bookkeeping services across Canada through strategic acquisitions and thoughtful growth.',
       personalInfo: 'Born and raised in Ottawa, Fadi is a motorsport enthusiast who enjoys racing, golfing, and reading. He’s also active in nonprofit work and previously served as a board member for the Carleton University Students’ Association.'
     },
-    {
-      id: 5,
-      name: 'Karen Frisky',
-      title: 'CFO',
-      image: '/team/karen.jpg',
-      bio: 'Karen is the CFO at AYCE Capital and brings with her a vast array of accounting skills, earned during her 30 years of experience, including 14 years as Director of Finance and Chief Financial Officer with several public mining companies on both the TSX-V and the CSE.',
-      personalInfo: ''
-    },
+    
     
   ]);
   
