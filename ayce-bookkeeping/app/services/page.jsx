@@ -328,7 +328,7 @@ const ServicesPage = () => {
               <ul className="space-y-2">
                 <li className="flex items-start group">
                   <ChevronRight className="h-5 w-5 text-teal-400 mr-2 mt-1 flex-shrink-0 transform transition-transform group-hover:translate-x-1" />
-                  <span className="text-gray-400">Fair market valuations</span>
+                  <span className="text-gray-400">Fair valuations</span>
                 </li>
                 <li className="flex items-start group">
                   <ChevronRight className="h-5 w-5 text-teal-400 mr-2 mt-1 flex-shrink-0 transform transition-transform group-hover:translate-x-1" />
