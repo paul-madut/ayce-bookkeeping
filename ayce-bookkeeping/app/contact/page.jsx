@@ -339,7 +339,7 @@ export default function ContactPage() {
       {/* Footer */}
       <div className="container mx-auto px-4 py-8 mt-12 border-t border-gray-800">
         <div className="text-center text-gray-500 text-sm">
-          © 2025 AYCE Bookkeeping. All rights reserved.
+          © 2025 ANAVO Bookkeeping. All rights reserved.
         </div>
       </div>
     </div>

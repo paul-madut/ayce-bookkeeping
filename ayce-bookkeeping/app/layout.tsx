@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AYCE Bookkeeping",
+  title: "ANAVO Bookkeeping",
   description: "Modern Support for Legacy Firms",
   icons: {
     icon: "/favicon.ico",
