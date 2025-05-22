@@ -29,6 +29,10 @@ export default function NavbarSection() {
       link: "services",
     },
     {
+      name: "Aquisitions",
+      link: "aquisitions",
+    },
+    {
       name: "Press",
       link: "press",
     },

@@ -104,8 +104,8 @@ function Contact() {
                         <div className="space-y-6">
                             <AnimatedText delay={0.4}>
                                 <div className="font-bold mb-1">Email</div>
-                                <a href="mailto:info@ayce-bookkeeping.com" className="text-gray-400 hover:text-white">
-                                    info@ayce-bookkeeping.com
+                                <a href="mailto:info@anavo-bookkeeping.com" className="text-gray-400 hover:text-white">
+                                    info@anavo-bookkeeping.com
                                 </a>
                             </AnimatedText>
                             <AnimatedText delay={0.5}>

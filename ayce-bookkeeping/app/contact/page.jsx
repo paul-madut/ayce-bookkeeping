@@ -168,13 +168,13 @@ export default function ContactPage() {
             >
               <h3 className="text-lg font-semibold mb-2 text-teal-400">Email</h3>
               <p className="text-gray-300">
-                <a href="mailto:info@ayce-bookkeeping.com" className="hover:text-teal-400 transition-colors">
-                  info@ayce-bookkeeping.com
+                <a href="mailto:info@anavo-bookkeeping.com" className="hover:text-teal-400 transition-colors">
+                  info@anavo-bookkeeping.com
                 </a>
               </p>
               <p className="text-gray-300">
-                <a href="mailto:support@ayce-bookkeeping.com" className="hover:text-teal-400 transition-colors">
-                  support@ayce-bookkeeping.com
+                <a href="mailto:support@anavo-bookkeeping.com" className="hover:text-teal-400 transition-colors">
+                  support@anavo-bookkeeping.com
                 </a>
               </p>
             </motion.div>

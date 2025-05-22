@@ -20,8 +20,8 @@ export async function POST(request) {
     
     // Send email
     const emailResponse = await resend.emails.send({
-      from: 'Contact Form <noreply@ayce-bookkeeping.com>',
-      to: 'info@ayce-bookkeeping.com',
+      from: 'Contact Form <noreply@anavo-bookkeeping.com>',
+      to: 'info@anavo-bookkeeping.com',
       replyTo: email,
       subject: 'New Contact Form Submission',
       html: `
