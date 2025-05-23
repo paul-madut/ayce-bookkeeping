@@ -2,8 +2,6 @@
 User-agent: *
 Allow: /
 
-# Host
-Host: https://anavo-bookkeeping.com
 
 # Sitemaps
 Sitemap: https://anavo-bookkeeping.com/sitemap.xml
