@@ -12,7 +12,6 @@ import Testimonials from "../components/landing/Testimonials";
 import Contact from "../components/landing/Contact";
 import Story from "@/components/landing/Story";
 
-
 // Stagger children delay calculation
 export const stagger = (index, baseDelay = 0.1) => baseDelay + index * 0.1;
 
@@ -38,10 +37,11 @@ export const AnimatedText = ({ children, delay = 0, className = "" }) => {
 export default function page() {
   return (
     <>
-    <link rel="icon" href="/favicon.ico" />
-<link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
-<link rel="icon" type="image/png" sizes="16x16" href="/logo.png" />
-<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" type="image/png" href="/favicon.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/logo.png" />
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
       <LampContainer className=" pt-[14rem] ">
         <motion.h1
@@ -60,9 +60,8 @@ export default function page() {
 
       <About />
       <Story />
-      
+
       <Contact />
-      
     </>
   );
 }
