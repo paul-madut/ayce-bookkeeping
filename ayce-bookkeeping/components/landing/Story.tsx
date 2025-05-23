@@ -56,7 +56,7 @@ const Story = () => {
                   </h3>
                   <p className="text-lg">
                     
-                    That's when we connected with the founders of <span className="text-white font-medium">ANAVO Bookkeeping</span>, 
+                    That's when we connected with the founders of <span className="text-white font-medium">Anavo Bookkeeping</span>, 
                     seasoned professionals who had been transforming managed service providers (MSPs) by helping them modernize operations and migrate to the cloud—joined by a team of forward-thinking accountants who shared their vision for innovation in the industry
                   </p>
                 </div>

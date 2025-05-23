@@ -63,7 +63,7 @@ export default function Acquisitions() {
             className="h-1 bg-teal-400 mx-auto mb-8"
           />
           <p className="text-center text-gray-400 text-lg max-w-2xl mx-auto">
-          At AYCE Bookkeeping, we acquire high-quality bookkeeping firms and empower them to thrive through long-term partnerships and strategic support.
+          At Anavo Bookkeeping, we acquire high-quality bookkeeping firms and empower them to thrive through long-term partnerships and strategic support.
           </p>
         </motion.div>
       </div>
@@ -110,7 +110,7 @@ export default function Acquisitions() {
                   <h2 className="text-2xl sm:text-3xl font-bold text-teal-400">Our Promise to Firm Owners</h2>
                 </div>
                 <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
-                  We respect your time, your team, and your work. When you partner with AYCE Bookkeeping, you're not just selling your business — you're securing its future. We are flexible on deal structure, retirement timelines, and ownership transitions, and we welcome conversations at any stage.
+                  We respect your time, your team, and your work. When you partner with Anavo Bookkeeping, you're not just selling your business — you're securing its future. We are flexible on deal structure, retirement timelines, and ownership transitions, and we welcome conversations at any stage.
                 </p>
               </div>
             </div>

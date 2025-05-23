@@ -59,7 +59,7 @@ const TeamPage = () => {
             <span className="inline-block px-4 py-2 rounded-full bg-black text-teal-400 text-sm font-medium mb-6">
             Revitalizing Bookkeeping
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Meet the people behind ANAVO Bookkeeping</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Meet the people behind Anavo Bookkeeping</h2>
             <p className="text-gray-300 text-lg mb-8">
               Our team brings decades of combined experience in finance, operations, and technology to help Managed Service Providers grow and thrive.
             </p>

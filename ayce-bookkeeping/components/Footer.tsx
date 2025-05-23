@@ -10,7 +10,7 @@ function Footer() {
     <div className="max-w-6xl mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
         <AnimatedText delay={0.1}>
-          <div className="text-2xl font-bold mb-6">ANAVO Bookkeeping</div>
+          <div className="text-2xl font-bold mb-6">Anavo Bookkeeping</div>
           <p className="text-gray-400">
           Looking to the Future? <br /> So Are We.
           </p>
@@ -71,7 +71,7 @@ function Footer() {
       </div>
 
       <AnimatedText delay={0.5} className="text-gray-400 text-sm">
-        © 2025 ANAVO Bookkeeping. All rights reserved.
+        © 2025 Anavo Bookkeeping. All rights reserved.
       </AnimatedText>
     </div>
   </footer>

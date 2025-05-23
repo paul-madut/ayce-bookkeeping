@@ -48,7 +48,7 @@ export default function NavbarSection() {
           <Link href="/">
          
               <div className="text-2xl font-bold mr-8 bg-gradient-to-r from-[#468783] to-[#005154] bg-clip-text text-transparent">
-                <Image src={"/logo.svg"} alt="ANAVO Bookkeeping" width={150} height={150}></Image>
+                <Image src={"/logo.svg"} alt="Anavo Bookkeeping" width={150} height={150}></Image>
               </div>
             
           </Link>
