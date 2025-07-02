@@ -111,8 +111,8 @@ function Contact() {
                             <AnimatedText delay={0.5}>
                                 <div className="font-bold mb-1">Office</div>
                                 <p className="text-gray-400">
-                                    22 King Street South
-                                    Waterloo, ON N2J 1N8
+                                    103-2727 Steeles Ave West
+                                    Toronto, Ontario, M3J3G9
                                 </p>
                             </AnimatedText>
                             <AnimatedText delay={0.6}>

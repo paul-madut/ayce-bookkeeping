@@ -158,8 +158,8 @@ export default function ContactPage() {
               className="bg-gray-900 p-6 rounded-lg mb-6 border-l-4 border-teal-400"
             >
               <h3 className="text-lg font-semibold mb-2 text-teal-400">Location</h3>
-              <p className="text-gray-300">22 King Street South Waterloo</p>
-              <p className="text-gray-300">ON N2J 1N8</p>
+              <p className="text-gray-300">103-2727 Steeles Ave West</p>
+              <p className="text-gray-300">Toronto, Ontario, M3J3G9</p>
             </motion.div>
 
             <motion.div 
