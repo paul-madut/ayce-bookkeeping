@@ -23,14 +23,6 @@ const TeamPage = () => {
     },
     {
       id: 3,
-      name: 'Liam Woodside',
-      title: 'VP - M&A',
-      image: '/team/liam.jpg',
-      bio: 'Liam is the VP of M&A at AYCE Capital. He focuses on financial analysis, due diligence, and transaction document preparation. He has prior experience in M&A advisory, financial modeling, and FP&A for a renewable energy firm.',
-      personalInfo: 'Born in the Maritimes and raised in Ottawa, Liam enjoys badminton, running, poker, and bouldering in his free time.'
-    },
-    {
-      id: 4,
       name: 'Fadi Syoufi',
       title: 'Director',
       image: '/team/fadi.jpg',
